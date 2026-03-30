@@ -1,0 +1,268 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5; /* vaalea tausta */
+}
+
+/* CONTAINER */
+.webtoon-container {
+  height: 100vh;
+  overflow-y: auto;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  background: #f5f5f5; /* vaalea tausta */
+}
+
+/* PANEL */
+.panel {
+  width: 360px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff; /* vaalea paneli */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.panel:hover {
+  transform: scale(1.02);
+}
+
+/* IMAGE */
+.image-area {
+  height: 420px;
+  background: #e0e0e0; /* vaalea kuva-alue */
+  position: relative;
+}
+
+/* TEXT */
+.text-area {
+  padding: 16px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #222; /* tumma teksti */
+}
+
+/* EMPTY STATE */
+.preview-empty {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555; /* tummanharmaa teksti */
+  font-size: 14px;
+}
+
+/* DIALOGUE STYLE */
+.panel.dialogue .text-area {
+  background: #f0f0f0; /* vaalea puhekupla */
+  color: #222;
+  border-radius: 14px;
+  margin: 12px;
+  position: relative;
+  padding: 14px 16px;
+}
+
+/* SPEECH BUBBLE TAIL */
+.panel.dialogue .text-area::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 24px;
+  border: 12px solid transparent;
+  border-top-color: #f0f0f0;
+}
+
+.camera-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.2); /* vaalea tag tausta */
+  color: #222;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.panel {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* APP LAYOUT */
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* header vaalea */
+  border-bottom: 1px solid #ccc;
+}
+
+.header h1 {
+  color: #222; /* tumma teksti */
+  font-size: 22px;
+}
+
+/* MAIN LAYOUT */
+.layout {
+  display: flex;
+  flex: 1;
+}
+
+/* LEFT SIDE */
+.left {
+  width: 40%;
+  background: #f0f0f0; /* vaalea vasen palkki */
+  padding: 30px;
+  border-right: 1px solid #ccc;
+}
+
+/* RIGHT SIDE */
+.right {
+  width: 60%;
+  background: #f5f5f5; /* vaalea oikea palkki */
+  overflow-y: auto;
+}
+
+/* STORY INPUT */
+.story-input h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.title-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff; /* vaalea input */
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.script-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.fill-btn {
+  background: none;
+  border: none;
+  color: #7b5cff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.script-textarea {
+  width: 100%;
+  height: 260px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff; /* vaalea textarea */
+  color: #222;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #7b5cff, #a855f7);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #fff; /* vaalea tab */
+  color: #555;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tab:hover {
+  background: #eee;
+}
+
+.tab.active {
+  background: #7b5cff;
+  color: white;
+}
+
+/* TAB CONTENT */
+.tab-content {
+  margin-top: 10px;
+}
+
+.placeholder-tab {
+  color: #555;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.world-tab h2 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff; /* vaalea input */
+  color: #222;
+}
+
+.textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff; /* vaalea textarea */
+  color: #222;
+  resize: none;
+}

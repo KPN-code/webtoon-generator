@@ -1,0 +1,13 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "myAwsRegion",
+      "environmentVariableName": "MY_AWS_REGION"
+    },
+    {
+      "cloudFormationParameterName": "bedrockModel",
+      "environmentVariableName": "BEDROCK_MODEL"
+    }
+  ]
+}

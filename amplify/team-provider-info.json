@@ -1,0 +1,31 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-webtoongenerator-dev-dd6ad-authRole",
+      "UnauthRoleArn": "arn:aws:iam::455322614957:role/amplify-webtoongenerator-dev-dd6ad-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::455322614957:role/amplify-webtoongenerator-dev-dd6ad-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-webtoongenerator-dev-dd6ad-deployment",
+      "UnauthRoleName": "amplify-webtoongenerator-dev-dd6ad-unauthRole",
+      "StackName": "amplify-webtoongenerator-dev-dd6ad",
+      "StackId": "arn:aws:cloudformation:eu-north-1:455322614957:stack/amplify-webtoongenerator-dev-dd6ad/4cd665e0-2a9c-11f1-991f-0a2e1ff9efb7",
+      "AmplifyAppId": "d1an717pwjdanv"
+    },
+    "categories": {
+      "function": {
+        "webtoongeneratora0208b26": {
+          "deploymentBucketName": "amplify-webtoongenerator-dev-dd6ad-deployment",
+          "s3Key": "amplify-builds/webtoongeneratora0208b26-4a386879576651483763-build.zip",
+          "myAwsRegion": "us-east-1",
+          "bedrockModel": "anthropic.claude-v1"
+        }
+      },
+      "api": {
+        "BedrockAPI": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  }
+}
