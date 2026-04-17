@@ -1,31 +1,15 @@
 {
-  "dev": {
+  "main": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-webtoongenerator-dev-dd6ad-authRole",
-      "UnauthRoleArn": "arn:aws:iam::455322614957:role/amplify-webtoongenerator-dev-dd6ad-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::455322614957:role/amplify-webtoongenerator-dev-dd6ad-authRole",
+      "AuthRoleName": "amplify-webtoongenerator-main-6f811-authRole",
+      "UnauthRoleArn": "arn:aws:iam::455322614957:role/amplify-webtoongenerator-main-6f811-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::455322614957:role/amplify-webtoongenerator-main-6f811-authRole",
       "Region": "eu-north-1",
-      "DeploymentBucketName": "amplify-webtoongenerator-dev-dd6ad-deployment",
-      "UnauthRoleName": "amplify-webtoongenerator-dev-dd6ad-unauthRole",
-      "StackName": "amplify-webtoongenerator-dev-dd6ad",
-      "StackId": "arn:aws:cloudformation:eu-north-1:455322614957:stack/amplify-webtoongenerator-dev-dd6ad/4cd665e0-2a9c-11f1-991f-0a2e1ff9efb7",
-      "AmplifyAppId": "d1an717pwjdanv"
-    },
-    "categories": {
-      "function": {
-        "webtoongeneratora0208b26": {
-          "deploymentBucketName": "amplify-webtoongenerator-dev-dd6ad-deployment",
-          "s3Key": "amplify-builds/webtoongeneratora0208b26-4a386879576651483763-build.zip",
-          "myAwsRegion": "eu-north-1",
-          "bedrockModel": "amazon.nova-lite-v1:0"
-        }
-      },
-      "api": {
-        "BedrockAPI": {}
-      },
-      "hosting": {
-        "S3AndCloudFront": {}
-      }
+      "DeploymentBucketName": "amplify-webtoongenerator-main-6f811-deployment",
+      "UnauthRoleName": "amplify-webtoongenerator-main-6f811-unauthRole",
+      "StackName": "amplify-webtoongenerator-main-6f811",
+      "StackId": "arn:aws:cloudformation:eu-north-1:455322614957:stack/amplify-webtoongenerator-main-6f811/503ccb10-3a42-11f1-9d14-0a137927d0e5",
+      "AmplifyAppId": "d2uobcetihb5h7"
     }
   }
 }
